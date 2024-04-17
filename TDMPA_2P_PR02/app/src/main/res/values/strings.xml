@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TDMPA_2P_PR02</string>
+    <string-array name="Categorias">
+        <item>Comida</item>
+        <item>Tecnologia</item>
+        <item>Papeleria</item>
+    </string-array>
+    <string-array name="Comida">
+        <item>Tacos Combinados</item>
+        <item>Chilaquiles Verdes</item>
+        <item>Pozole Verde</item>
+    </string-array>
+    <string-array name="Tecnologia">
+        <item>Samsung S23</item>
+        <item>Asus VivoBook</item>
+        <item>Sony WF-CH510</item>
+    </string-array>
+    <string-array name="Papeleria">
+        <item>Lapiz</item>
+        <item>Goma</item>
+        <item>Sacapuntas</item>
+    </string-array>
+</resources>

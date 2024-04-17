@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1E8FF"
+    tools:context=".MainActivity">
+
+    <view
+        android:id="@+id/viewTitulo"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="374dp"
+        android:layout_height="67dp"
+        android:background="#052659"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <view
+        android:id="@+id/viewSpinner1"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="375dp"
+        android:layout_height="127dp"
+        android:background="#7DA0CA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <view
+        android:id="@+id/viewSpinner2"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="375dp"
+        android:layout_height="127dp"
+        android:background="#7DA0CA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <view
+        android:id="@+id/viewProducto"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="375dp"
+        android:layout_height="318dp"
+        android:background="#021024"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mooli"
+        android:text="Bienvenido!!!"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewTitulo"
+        app:layout_constraintEnd_toEndOf="@+id/viewTitulo"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/viewTitulo"
+        app:layout_constraintTop_toTopOf="@+id/viewTitulo"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mooli"
+        android:text="Seleccione una categoria:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSpinner1"
+        app:layout_constraintEnd_toEndOf="@+id/viewSpinner1"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/viewSpinner1"
+        app:layout_constraintTop_toTopOf="@+id/viewSpinner1"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mooli"
+        android:text="Seleccione un producto:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSpinner2"
+        app:layout_constraintEnd_toEndOf="@+id/viewSpinner2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/viewSpinner2"
+        app:layout_constraintTop_toTopOf="@+id/viewSpinner2"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Spinner
+        android:id="@+id/spnCategoria"
+        android:layout_width="276dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSpinner1"
+        app:layout_constraintEnd_toEndOf="@+id/viewSpinner1"
+        app:layout_constraintStart_toStartOf="@+id/viewSpinner1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/spnProducto"
+        android:layout_width="276dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSpinner2"
+        app:layout_constraintEnd_toEndOf="@+id/viewSpinner2"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/viewSpinner2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProducto"
+        app:layout_constraintEnd_toEndOf="@+id/viewProducto"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/viewProducto"
+        app:layout_constraintTop_toTopOf="@+id/viewProducto"
+        app:layout_constraintVertical_bias="0.089"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="189dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/mooli"
+        android:text="Nombre: ..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProducto"
+        app:layout_constraintEnd_toEndOf="@+id/viewProducto"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="@+id/viewProducto"
+        app:layout_constraintTop_toTopOf="@+id/viewProducto"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="173dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/mooli"
+        android:text="Precio: ..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProducto"
+        app:layout_constraintEnd_toEndOf="@+id/viewProducto"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="@+id/viewProducto"
+        app:layout_constraintTop_toTopOf="@+id/viewProducto"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <TextView
+        android:id="@+id/txtDesxripcion"
+        android:layout_width="344dp"
+        android:layout_height="99dp"
+        android:fontFamily="@font/mooli"
+        android:text="Descripcion: ..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProducto"
+        app:layout_constraintEnd_toEndOf="@+id/viewProducto"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="@+id/viewProducto"
+        app:layout_constraintTop_toTopOf="@+id/viewProducto"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <Button
+        android:id="@+id/btnCotizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cotizar"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProducto"
+        app:layout_constraintEnd_toEndOf="@+id/viewProducto"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/viewProducto"
+        app:layout_constraintTop_toTopOf="@+id/viewProducto"
+        app:layout_constraintVertical_bias="0.959" />
+</androidx.constraintlayout.widget.ConstraintLayout>
